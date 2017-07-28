@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #caddf7
+}
+
+.heading {
+  background-color: black;
+  text-align: center;
+  height: 5em;
+}
+
+.heading > h1 {
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3em;
+  color: white;
+}
+
+.center-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  margin: 30px;
+  padding: 5px;
+  border: 2px outset gray;
+  background: #262728;
+  color: white;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  border: 2px inset gray;
+}
+
+#board {
+  margin: 0 auto;
+}
+
+.square {
+  float: left;
+  border: 1px outset gray;
+  background-color: #e6f3f7;
+}
+
+.change-background {
+  background-color: #69c1ea;
+}
+
+.flag {
+  background-image: url(../images/flag.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.kevin {
+  background-image: url(../images/kevin.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.game-text {
+  margin: 20px;
+}
+
+.game-text > h3 {
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5em;
+}
+
+#game-over {
+  font-weight: 700;
+  font-size: 3em;
+  visibility: hidden;
+}
